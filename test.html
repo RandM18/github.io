@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<style>
+	
+body{
+  width: 1200px;
+  margin: 0 auto;
+  background-color:#020e2e;
+  padding-top:100px;
+}
+
+.starscream{
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://avatanplus.com/files/resources/original/58d8fa741c0b215b0f925593.png);
+	animation: stars 10s infinite;
+	z-index: -1;
+}
+
+@keyframes stars{
+	from{opacity: 1}
+	50% {opacity: 0}
+	to{opacity: 1}
+}
+
+.wrapper{
+  /*position: absolute;*/
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #26C6DA;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+/*.item{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(img/block_opros_mechanism.png) center center;
+  background-size: cover;
+  transform: rotate(-45deg);
+}*/
+
+/*.wrapper:hover .item{
+  background-size: 250%;
+  transition: 1s;
+  
+}*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+section{
+	background-color: #fff;
+	padding: 30px;
+	box-shadow: 0 0 10px white;
+	/*margin-top:50vh;*/
+  margin-top: 130px;
+	z-index: 2;
+  margin-bottom: 200px;
+}
+
+.item{
+  position: relative;
+  width: 430px; height: 430px;
+  /*transform: rotate(-45deg) scale(1.42);*/
+  transform: rotate(-45deg) translateY(-90px);
+/*  background: #4FC3F7 url(http://simpleicon.com/wp-content/uploads/factory.png) center bottom no-repeat;*/
+background: #fff url(img/block_opros_fabric.png) center center no-repeat;
+  background-size: 50%;
+  box-shadow: 0 0 10px black;
+}
+
+.smoke{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(89,106,114,0);
+  /*background: radial-gradient(ellipse at center, rgba(206,220,231,1) 33%,rgba(89,106,114,0) 100%);*/
+  background: radial-gradient(ellipse at center, rgb(138, 143, 111) 33%,rgba(89,106,114,0) 100%);
+  top: 113px;
+  left: 110px;
+  animation: smoke-move 2s linear infinite;
+}
+
+@keyframes smoke-move {
+      /*0% {top: 80px; left: 110px}
+      20% {top: 67px; left: 115px}
+      30% {top: 58px; left: 120px; opacity: 0.9}
+      40% {top: 52px; left: 125px; }
+      50% {top: 46px; left: 140px; }
+      60% {top: 42px; left: 152px; }
+      70% {top: 38px; left: 165px; }
+      80% {top: 32px; left: 175px; }
+      90% {top: 25px; left: 190px; }
+      100% {top: 12px; left: 200px; opacity: 0; width: 90px; height: 60px}*/
+  0%{top: 105px; left: 115px;}
+  20%{top: 90px; left: 118px;}
+  40%{top: 75px; left: 121px; opacity: 0.7;}
+  60%{top: 60px; left: 124px;}
+  80%{top: 45px; left: 127px;}
+  100%{top: 30px; left: 130px; opacity: 0; width: 40px; height:40px}
+}
+
+@keyframes smokemove2{
+  0%{transform: translate(0px,0px);}
+  20%{transform: translate(3px,-15px);}
+  40%{transform: translate(6px,-30px); opacity: 0.7;}
+  60%{transform: translate(9px,-45px);}
+  80%{transform: translate(12px,-60px);}
+  100%{transform: translate(15px,-75px); opacity: 0; width: 40px; height:40px}
+}
+
+
+.smoke:nth-child(1) {
+  /*78 144    =====  */
+    top: 173px; 
+    left: 158px;
+      -webkit-animation: smokemove2 1.5s linear infinite
+    }
+.smoke:nth-child(2) {
+    top: 125px;
+    left: 207px;
+      -webkit-animation: smokemove2 1.8s linear infinite
+    }
+
+.smoke:nth-child(3) {
+      top: 160px;
+      left: 250px;
+      -webkit-animation: smokemove2 1.6s linear infinite
+    }
+
+
+
+.card{
+  width: 220px;
+  /*height: 380px;*/
+  /*margin-right: 10px;
+  margin-left: 10px;*/
+  text-align:center;
+}
+.card-img{
+  margin: 0 auto;
+  width: auto;
+  max-height: 320px;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 800;
+  color:#756c62;
+}
+.card-link{
+  font-size: 20px;
+  font-weight: 800;
+  color:#756c62;
+  text-align: right;
+}
+
+.card:hover{
+  background-color: rgba(240, 230, 140, 0.2);
+  border-radius: 2px;
+}
+.card-link:hover{
+  text-shadow: 0 0 20px green;
+}
+
+
+.my-slider-logo{
+  width: 33%;
+  height: 100px;
+  margin: auto;
+}
+.logo_card{
+  width: 40px;
+  text-align: center;
+}
+.logo_card_img{
+  max-width: 40px;
+  height: auto;
+  margin: auto;
+}
+.logo_card_title{
+  color:#756c62;
+}
+
+/*.test{
+  height: 400px;
+}*/
+.slick-active{
+height: 400px !important;
+}
+
+h2{
+  text-align: center;
+  margin:40px 0;
+  font-size:30px;
+}
+
+.animation{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background: #fff url(https://st2.depositphotos.com/3431221/6291/v/950/depositphotos_62918575-stock-illustration-vector-drawing-of-a-successful.jpg) center right no-repeat / cover;
+}
+#animtext{
+  width: 50%;
+  height: 30%;
+  opacity: 0;
+  background: url(https://png.pngtree.com/element_origin_min_pic/00/02/68/3956839bc30e2da.jpg) center center no-repeat;
+  background-size: 100%;
+  transition: 1.5s ease;
+  padding: 20px 30px;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+</head>
+<body>
+	<div class="starscream"></div>
+  
+  <div class="wrapper">
+    <div class="item">
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+    </div>
+  </div>
+
+  <section>
+
+  <h2>Опрос руководителей хозяйствующих объектов</h2>
+
+  	<div class=test>
+  <div class="my-slider">
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">1 квартал 2017 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">2 квартал 2017 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">3 квартал 2017 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">4 квартал 2017 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">1 квартал 2018 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+    <div class="card">
+      <img class="card-img" src="img/public/paper1.svg"></img>
+      <p class="card-title">2 квартал 2018 года</p>
+      <a class="card-link" href="#">Скачать</a>
+    </div>
+  </div>
+</div>
+
+<div class="my-slider-logo">
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo1.png"></img>
+      <a class="logo_card_title" href="#">Сайт 1</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo2.png"></img>
+      <a class="logo_card_title" href="#">Сайт 2</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo3.png"></img>
+      <a class="logo_card_title" href="#">Сайт 3</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo4.png"></img>
+      <a class="logo_card_title" href="#">Сайт 4</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo5.png"></img>
+      <a class="logo_card_title" href="#">Сайт 5</a>
+    </div>
+    
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo1.png"></img>
+      <a class="logo_card_title" href="#">Сайт 6</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo1.png"></img>
+      <a class="logo_card_title" href="#">Сайт 7</a>
+    </div>
+
+    <div class="logo_card">
+      <img class="logo_card_img" src="logo/logo1.png"></img>
+      <a class="logo_card_title" href="#">Сайт 8</a>
+    </div>
+  </div>
+
+
+<div class="animation" onmouseover="start()">
+  <div id="animtext"></div>
+</div>
+    
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+  $('.my-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+
+  $('.my-slider-logo').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
+});
+
+    var number = 0;
+    var texts = ["Здравствуйте!","Уважаемые коллеги...","Меня зовут Логачев","Темой моего доклада будет...."]
+    var txt = document.getElementById('animtext');  
+    function start(){
+      number = 0;
+    }
+    var timerId = setInterval(text, 3000);
+    function text(){
+        txt.style.opacity = 1;
+        txt.innerHTML = texts[number];
+        setTimeout(function() { txt.style.opacity = 0; }, 1000);
+        number=number+1;
+        if (number == texts.length) number = 0;
+    }
+  </script>
+
+
+</body>
+</html>
