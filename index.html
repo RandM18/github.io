@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>КАУ "ЦЭСИ"</title>
+	<!-- Стили -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<!-- Шрифты -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
+	<!-- Вьюпорт -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<section class="main_header_menu">
+		<div class="container">
+
+			<!-- ROW -->
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="d1 animated zoomInDown">
+					  <form>
+					  <input type="text" placeholder="Искать здесь...">
+					  <button type="submit"></button>
+					  </form>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<img src="img/logo.png" class="logo_cesy animated jackInTheBox">
+				</div>
+			</div>
+			<!-- ROW -->
+
+	<div class="menunav animated zoomInUp">
+			<div class="row">
+				<div class="col-lg">
+					<!-- Analytics -->
+					<div class="item_wrapper item_wrapper_analytics" onmouseover="blockName('Аналитические исследования',0)" onmouseout="blockName('',0)">
+						<div class="item_analytics">
+							<div class="analytics_aircraft"></div>
+							<div class="analytics_graf0"></div>
+							<div class="analytics_graf1"></div>
+							<div class="analytics_graf2"></div>
+							<div class="analytics_graf3"></div>
+							<div class="analytics_graf4"></div>
+							<div class="analytics_graf5"></div>
+						</div>
+					</div>					
+				</div>
+				<!-- //Analytics -->
+
+				<div class="col-lg">
+					<div class="item_wrapper item_wrapper_town" onmouseover="blockName('А что думаете Вы?',1)" onmouseout="blockName('',1)">
+					<div class="item_town">
+						<div class="town_car"></div>
+						<div class="town_trac"></div>
+						<div class="town_circle"></div>
+					</div>
+				</div>
+				</div>
+				<!-- //Town -->
+
+				<div class="col-lg">
+					<div class="item_wrapper item_wrapper_press" onmouseover="blockName('Эту информацию мы подготовили специально для Вас ;)',2)" onmouseout="blockName('',2)">
+						<div class="item_press">
+							<div class="press_news"></div>
+							<div class="press_zoomin"></div>
+						</div>
+					</div>	
+				</div>
+				<!-- //Press -->
+
+				<div class="col-lg-4 offset-lg-2">
+					<div class="item_wrapper item_wrapper_pred" onmouseover="blockName('Оценка текущих трендов экономики',3)" onmouseout="blockName('',3)">
+						<div class="pred_item">
+							<div class="item_pred_front">
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+								<div class="smoke"></div>
+							</div>
+							<div class="item_pred_back">
+								<div class="mechanism"></div>
+								<div class="mechanism2"></div>
+								<div class="pot"></div>
+								<div class="mechanism_signal"></div>
+								<div class="mechanism_circle mechanism_circle_1"></div>
+								<div class="mechanism_circle mechanism_circle_2"></div>
+								<div class="mechanism_circle mechanism_circle_3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //Fabric -->
+
+				<div class="col-lg-4">
+					<div class="item_wrapper item_wrapper_conference" onmouseover="blockName('Мероприятия, организованные КАУ &quot;ЦЭСИ&quot;',4)" onmouseout="blockName('',4)">
+						<div class="conference_item">
+							<div id="conference_item_cloud"></div>
+							<div class="conference_mask" onmouseover=" conference_anim_start()" onmouseout=" conference_anim_end()"></div>
+						</div>
+					</div>	
+				</div>
+				<!-- //Organization -->
+
+			</div>
+			<!-- //row -->
+			
+		</div>
+		<!-- //MenuNav -->
+	</div>
+		<!-- container -->
+		<div id="hiddenTxt"></div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<a class="footer_logo_link" href="about.html"><img class="footer_logo" src="img/logo.png"></img></a>
+					<div class="footer_text">&copy;2018 КАУ "ЦЭСИ"</div>
+					<div class="footer_adress">Алтайский край, 656038, а/я 680</br>
+					г.Барнаул, ул.Комсомольский, 118</div>
+					<a class="footer_mail" href="mailto:cesy@alregn.ru">cesy@alregn.ru</a>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer_logo_name">Полезные ссылки</div>
+					<div class="footer_slider">				
+					
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo2.png"></img>
+				      <a class="footer_logo_card_title" href="#">Сайт Президента России</a>
+				    </div>
+
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo3.png"></img>
+				      <a class="footer_logo_card_title" href="#">Портал органов государственной власти</a>
+				    </div>
+						
+						<div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo1.png"></img>
+				      <a class="footer_logo_card_title" href="#">Министерство экономического развития Алтайского края</a>
+				    </div>
+
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo4.png"></img>
+				      <a class="footer_logo_card_title" href="#">80 лет Алтайскому краю</a>
+				    </div>
+
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo5.png"></img>
+				      <a class="footer_logo_card_title" href="#">Информационно-аналитический портал Doc22.ru</a>
+				    </div>
+				    
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/logo1.png"></img>
+				      <a class="footer_logo_card_title" href="#">Официальный сайт Алтайского края</a>
+				    </div>
+
+				    <div class="footer_logo_card">
+				      <img class="footer_logo_card_img" src="logo/drawing.svg"></img>
+				      <a class="footer_logo_card_title" href="#">Катунь 24</a>
+				    </div>
+
+				 
+					</div>
+					
+				</div>
+				<div class="col-lg-4 text-lg-center">
+					<div class="footer__subscrib">Подпишитесь на нас</div>
+					<div class="d2">
+					  <form>
+					  	<input type="text" placeholder="Электронный адрес...">
+					  	<button type="submit"></button>
+					  </form>
+					</div>
+					<a class="footer_feedback">Связаться с нами</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+ <!-- footer -->
+
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js.js"></script>
+<script src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  $('.footer_slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2
+  });
+});
+</script>
+
+
+</body>
+</html>
